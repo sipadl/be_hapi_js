@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "db_hapi",
+    "port":5433,
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "db_hapi",
+    "host": "127.0.0.1",
+    "port":5433,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "db_hapi",
+    "host": "127.0.0.1",
+    "port":5433,
+    "dialect": "postgres"
+  }
+}

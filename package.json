@@ -1,0 +1,36 @@
+{
+  "name": "be-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "axios": "^0.27.2",
+    "csv-writer": "^1.6.0",
+    "fast-xml-parser": "^4.0.9",
+    "fs": "0.0.1-security",
+    "hapi-knex-postgres": "^0.1.2",
+    "hapi-pg-promise": "^2.0.0",
+    "hapi-plugin-pg": "^1.1.2",
+    "hapi-sequelizejs": "^4.5.1",
+    "joi": "^17.6.0",
+    "json-2-csv": "^3.17.1",
+    "json2csv": "^5.0.7",
+    "knex": "^2.3.0",
+    "node-fetch": "^2.0.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "pg-promise": "^10.12.0",
+    "sequelize": "^6.21.6",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
+}
