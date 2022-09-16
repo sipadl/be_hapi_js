@@ -59,6 +59,18 @@ const init = async () => {
     });
 
     server.route({
+        method: 'GET',
+        path: '/delete/{id}',
+        handler: async (request, h) => {
+            console.log(request.params);
+            const produk = await db.Products.destroy({where:{id:request.params.id}});
+            return [{
+                produk, "time":Date.now(),"status":"berhasil menghapus data"
+            }];
+        },
+    });
+
+    server.route({
         method: 'POST',
         path: '/add-produk',
         options: {
@@ -104,7 +116,7 @@ const init = async () => {
             id: Math.floor(Math.random() * 1000),
             category: insert.categori,
             prdNm: insert.prdNm,
-            prdImage01: insert.prdImage01 ? namefile[0] : null,
+            prdImage01: insert.prdImage01 ? namefile[0] : insert.linkImg ? insert.linkImg : '',
             prdImage02: insert.prdImage02 ? namefile[1] : null,
             prdImage03: insert.prdImage03 ? namefile[2] : null,
             qty: insert.qty,
